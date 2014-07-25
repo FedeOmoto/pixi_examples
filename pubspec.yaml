@@ -1,5 +1,10 @@
 name: pixi_examples
-description: A sample web application
+version: 0.1.1
+author: Federico Omoto <federico.omoto@gmail.com>
+description: Pixi examples ported to Dart.
+homepage: https://github.com/FedeOmoto/pixi_examples
+environment:
+  sdk: 1.5.3
 dependencies:
-  browser: any
-  pixi_dart: any
+  browser: '>=0.10.0+2 <0.11.0'
+  pixi_dart: '>=0.1.52 <0.2.0'
