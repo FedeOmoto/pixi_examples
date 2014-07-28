@@ -1,5 +1,5 @@
 name: pixi_examples
-version: 0.1.1
+version: 0.1.2
 author: Federico Omoto <federico.omoto@gmail.com>
 description: Pixi examples ported to Dart.
 homepage: https://github.com/FedeOmoto/pixi_examples
@@ -7,4 +7,4 @@ environment:
   sdk: 1.5.3
 dependencies:
   browser: '>=0.10.0+2 <0.11.0'
-  pixi_dart: '>=0.1.52 <0.2.0'
+  pixi_dart: '>=0.1.67 <0.2.0'
