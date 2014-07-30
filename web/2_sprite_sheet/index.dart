@@ -55,7 +55,6 @@ class SpriteSheetDemo {
 
       // Create an alien using the frame name.
       var alien = new Sprite.fromFrame(frameName);
-      alien.tint = new Color(random.nextInt(0xFFFFFF));
 
       /*
        * Fun fact for the day :)
