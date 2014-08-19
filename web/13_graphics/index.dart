@@ -47,7 +47,7 @@ class GraphicsDemo {
     graphics.moveTo(210, 300);
     graphics.lineTo(450, 320);
     graphics.lineTo(570, 350);
-    graphics.lineTo(580, 20);
+    graphics.quadraticCurveTo(600, 0, 480, 100);
     graphics.lineTo(330, 120);
     graphics.lineTo(410, 200);
     graphics.lineTo(210, 300);
@@ -62,6 +62,8 @@ class GraphicsDemo {
     graphics.beginFill(new Color(0xFFFF0B), 0.5);
     graphics.drawCircle(470, 200, 100);
 
+    graphics.endFill();
+
     graphics.lineStyle(20, new Color(0x33FF00));
     graphics.moveTo(30, 30);
     graphics.lineTo(600, 300);
@@ -74,18 +76,20 @@ class GraphicsDemo {
     thing.position.x = 620 ~/ 2;
     thing.position.y = 380 ~/ 2;
 
-    stage.onClick.listen(drawLine);
-    stage.onTap.listen(drawLine);
+    stage.onClick.listen(drawBezierCurve);
+    stage.onTap.listen(drawBezierCurve);
 
     // Run the render loop.
     window.animationFrame.then(animate);
   }
 
-  void drawLine(InteractionData event) {
+  void drawBezierCurve(InteractionData event) {
     graphics.lineStyle(random.nextInt(30), new Color(random.nextInt(0xFFFFFF)),
         1.0);
     graphics.moveTo(random.nextInt(620), random.nextInt(380));
-    graphics.lineTo(random.nextInt(620), random.nextInt(380));
+    graphics.bezierCurveTo(random.nextInt(620), random.nextInt(380),
+        random.nextInt(620), random.nextInt(380), random.nextInt(620), random.nextInt(
+        380));
   }
 
   void animate(num value) {
@@ -94,7 +98,7 @@ class GraphicsDemo {
     count += 0.1;
 
     thing.clear();
-    thing.lineStyle(30, Color.red, 1.0);
+    thing.lineStyle(10, Color.red, 1.0);
     thing.beginFill(Color.yellow, 0.5);
 
     thing.moveTo((-120 + sin(count) * 20).round(), (-100 + cos(count) *
