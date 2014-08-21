@@ -1,5 +1,5 @@
 name: pixi_examples
-version: 0.2.0
+version: 0.2.0+1
 author: Federico Omoto <federico.omoto@gmail.com>
 description: Pixi examples ported to Dart.
 homepage: https://github.com/FedeOmoto/pixi_examples
@@ -8,6 +8,6 @@ environment:
 dependencies:
   browser: '>=0.10.0+2 <0.12.0'
   dart_to_js_script_rewriter: '>=0.0.1+2 <0.0.3'
-  pixi_dart: '>=0.2.0 <0.4.0'
+  pixi_dart: '>=0.2.0+1 <0.4.0'
 transformers:
 - dart_to_js_script_rewriter

@@ -53,7 +53,7 @@ class PowerupDemo {
     if (powerup != null) {
       // Set the powerup position.
       powerup.position.x = window.innerWidth / 2;
-      powerup.position.y = window.innerHeight;
+      powerup.position.y = window.innerHeight.toDouble();
 
       // Set the powerup scale.
       powerup.scale.x = window.innerWidth / 520;
