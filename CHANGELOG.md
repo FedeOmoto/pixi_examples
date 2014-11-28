@@ -1,3 +1,7 @@
+# v0.2.0+2
+
+- Require SDK 1.8
+
 # v0.1.0 (2014-08-19)
 
 - Strip example: [Snake](http://fedeomoto.github.io/pixi/20_strip/)
